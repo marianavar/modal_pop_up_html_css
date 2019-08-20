@@ -1,0 +1,163 @@
+.modalDialogpop {
+    position: fixed;
+    font-family: 'Roboto', sans-serif;
+	  color: #898989;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalDialogpop:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+.modalDialogpop > div {
+    width: 28rem;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 10px 13px 20px;
+    background: white;
+    border-radius: 10px;
+    border-left: 1rem solid #FA777A;
+
+}
+.closepop {
+    color: #CCC;
+    font-size: 30px;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+
+}
+
+
+.modalpop{
+  display:flex;
+  flex-direction: row;
+  margin:0;
+}
+
+.phonepop{
+  margin-top:3rem;
+  margin-left:3rem;
+}
+
+
+.selectionpop{
+  display:flex;
+  flex-direction: row;
+}
+
+p{
+  font-size:1rem;
+  max-width: 20rem;
+  font-weight: 400;
+}
+
+h1{
+	color:#CF4F4F;
+	font-weight:400;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a {
+  padding: 10px ;
+  color:grey;
+}
+
+button {
+ position: relative;
+ height: 36px;
+ width: 100px;
+ margin: 5px 8px;
+ padding: 4px 5px;
+ font-family: 'Roboto', sans-serif;
+ font-weight: 400;
+ font-size: 14px;
+ color:white;
+ box-shadow: 0 1px 2px 0 rgba(112,112,112,0.50);
+ border: 1px #00B0F0 solid;
+ border-radius: 3px;
+ outline: 0;
+ overflow:hidden;
+ background-color:#00B0F0;
+ z-index: 1;
+ cursor: pointer;
+ transition:         0.88s ease-in;
+ -o-transition:      0.98s ease-in;
+ -ms-transition:     2.38s ease-in;
+ -moz-transition:    0.48s ease-in;
+ -webkit-transition: 0.48s ease-in;
+}
+
+.fill:hover {
+  color: #898989;
+}
+
+.fill:before {
+  content: "";
+  position: absolute; 
+  align-items:center;
+  background:white;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  -webkit-transition: top 0.09s ease-in;
+}
+
+.fill:hover:before {
+  top: 0;
+}
+
+@media (max-width: 40rem) {
+  .modalDialogpop > div {
+    width: 99vw;
+    border-left:0;
+    border-top:1rem solid #FA777A;
+  }
+
+  p{
+    font-size:1rem;
+    max-width: 17rem;
+    font-weight: 400;
+    text-align: left;
+  }
+  
+  h1{
+    color:#CF4F4F;
+    font-weight:400;
+    font-size:1.5rem;
+  }
+
+  img{
+    width: 3rem;
+  }
+
+  .phonepop{
+    margin-top: 1rem;
+    margin-left: 0.2rem;
+    margin-right: 1rem;
+    
+  }
+  
+}
